@@ -13,6 +13,7 @@ Deploying a FullStack Node.js &amp; Reactjs Application to Kubernetes Using EKS
    npm config set prefix '~/.npm-global'
    export PATH=~/.npm-global/bin:$PATH
    npm i -g nodemon
+   npm install cors
    ```
 4. Open the ‘package.json’ file, and add the following script under the “script” section.
    ```
@@ -48,4 +49,4 @@ Deploying a FullStack Node.js &amp; Reactjs Application to Kubernetes Using EKS
    ```
    #This will create the development server to run your application. On your browser, run http://localhost:4000
    npm run dev
-   ```
+   ``` 
