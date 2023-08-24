@@ -14,3 +14,38 @@ Deploying a FullStack Node.js &amp; Reactjs Application to Kubernetes Using EKS
    export PATH=~/.npm-global/bin:$PATH
    npm i -g nodemon
    ```
+4. Open the ‘package.json’ file, and add the following script under the “script” section.
+   ```
+   "dev": "nodemon -L app.js"
+   ```
+5. Within the backend folder, create a file and name it app.js, add the following code
+   ```
+   const express = require('express')
+   const cors = require('cors')
+   const app = express()
+   app.use(cors())
+   app.get('/', (req, res) => {
+     res.json([
+       {
+         "id":"1",
+         "title":"Movie Review: The Perk of Being a Wallflower"
+       },
+       {
+         "id":"2",
+         "title":"Game Review: Need for Speed"
+       },
+       {
+         "id":"3",
+         "title":"Show Review: Looking for Alaska"
+       }
+     ])
+   })
+   app.listen(4000, () => {
+     console.log('listening for requests on port 4000')
+   })
+   ```
+6. To run the application, use the following command on your server.
+   ```
+   #This will create the development server to run your application. On your browser, run http://localhost:4000
+   npm run dev
+   ```
