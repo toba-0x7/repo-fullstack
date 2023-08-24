@@ -47,6 +47,6 @@ Deploying a FullStack Node.js &amp; Reactjs Application to Kubernetes Using EKS
    ```
 6. To run the application, use the following command on your server.
    ```
-   #This will create the development server to run your application. On your browser, run http://localhost:4000
+   #This will create the development server to run your application. On your browser, run http://private-IP:4000
    npm run dev
    ``` 
