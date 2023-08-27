@@ -1,0 +1,31 @@
+
+> backend@1.0.0 dev /home/vagrant/repo-fullstack/node-react-k8s/backend
+> nodemon -L app.js
+
+[33m[nodemon] 3.0.1[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node app.js`[39m
+events.js:377
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at internal/fs/streams.js:173:14
+    at FSReqCallback.wrapper [as oncomplete] (fs.js:563:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! backend@1.0.0 dev: `nodemon -L app.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the backend@1.0.0 dev script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/vagrant/.npm/_logs/2023-08-27T10_04_59_701Z-debug.log
